@@ -15,13 +15,17 @@ body {
     animation: spin 1s linear infinite;
 }
 
+#loading-spinner {
+    display: none;
+}
+
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
 
 .country-card {
-    background-color: #ffffff;
+    background-color: #d3d3d3;
     padding: 20px;
     margin: 20px 0;
     border-radius: 10px;
@@ -53,13 +57,17 @@ body {
 }
 
 .error {
-    color: #d93025; /* Distinct error color */
+    color: #d93025;
     background-color: #fdecea;
     padding: 10px;
     border: 1px solid #f5c2c0;
     border-radius: 5px;
     margin: 10px 0;
     font-weight: bold;
+}
+
+#error-message {
+    display: none;
 }
 
 .hidden {
