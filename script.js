@@ -14,7 +14,7 @@ async function searchCountry(countryName) {
         errorMessage.classList.add("hidden");
 
         // Show spinner
-        spinner.classList.remove("hidden");
+        spinner.style.display = "block";
 
         // Fetch country data
         const response = await fetch(
