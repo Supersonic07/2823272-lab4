@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 6px solid #ddd;
+    border-top: 6px solid #3498db;
+    border-radius: 50%;
+    margin: 20px auto;
+    animation: spin 1s linear infinite; /* Required */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.country-card {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.country-card:hover {
+    transform: translateY(-5px);
+}
+
+.country-card h2 {
+    margin-top: 0;
+}
+
+.border-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.border-grid div {
+    background-color: #e3eaf2;
+    padding: 8px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.error {
+    color: #d93025; /* Distinct error color */
+    background-color: #fdecea;
+    padding: 10px;
+    border: 1px solid #f5c2c0;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
